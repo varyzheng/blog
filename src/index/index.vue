@@ -40,10 +40,10 @@ export default {
       }
     },
     toMirana () {
-      this.$router.push({name: 'mirana', params: {userId: 1}})
+      this.$router.push({name: 'mirana'})
     },
     toVary () {
-      this.$router.push({name: 'vary', params: {userId: 2}})
+      this.$router.push({name: 'vary'})
     }
   }
 }

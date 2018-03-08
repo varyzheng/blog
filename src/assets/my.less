@@ -1,0 +1,80 @@
+@import '../assets/color.less';
+*{
+  color: @fontColor;
+  a:hover {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}
+.navbar {
+  border-radius: 0;
+}
+.navbar-default {
+  background-color: @bgColor;
+  border-color: @bgColor;
+  .navbar-brand {
+    color: @linkColor;
+    &:hover {
+      color: @linkHoverColor;
+    }
+  }
+  .navbar-nav {
+    &>li>a {
+      color: @linkColor;
+      &:hover {
+        color: @linkHoverColor;
+      }
+    }
+    &>.open>a {
+      &, &:focus, &:hover {
+        color: @navFontColor;
+        background-color: @darkBgColor;
+      }
+    }
+    .open {
+      .dropdown-menu {
+        background-color: @bgColor;
+        &>li>a {
+          color: @navFontColor;
+          &:hover {
+            background-color: @darkBgColor;
+          }
+        }
+        .divider {
+          background-color: @darkBgColor;
+        }
+      }
+    }
+    .active>a {
+      &, &:focus, &:hover {
+        color: @navFontColor;
+        background-color: @darkBgColor;
+      }
+    }
+  }
+  .navbar-toggle {
+    &, &:focus, &:hover {
+      background-color: @darkBgColor;
+      border-color: @darkBgColor;
+    }
+    .icon-bar {
+      background-color: @navFontColor;
+    }
+  }
+  
+  .navbar-collapse, .navbar-form {
+    border-color: @darkBgColor;
+  }
+}
+.btn-default {
+  color: @linkColor;
+  background-color: @bgColor;
+  border-color: @bgColor;
+  &:hover {
+    color: @linkHoverColor;
+    background-color: @darkBgColor;
+    border-color: @darkBgColor;
+  }
+}
